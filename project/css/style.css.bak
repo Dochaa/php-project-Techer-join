@@ -1,0 +1,511 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Bundit";
+  src: url("./fonts/Bundit.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Bundit.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Bundit.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Bundit.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Bundit.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Bundit.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Bundit.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Upcjl";
+  src: url("./fonts/upcjl.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/upcjl.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/upcjl.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/upcjl.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/upcjl.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/upcjl.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/upcjl.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cl_font{
+font-family: 'Upcjl', sans-serif; font-size: 26px; 
+line-height: 26px;
+
+}
+.cl_font_std{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size:18px;
+ 
+}
+ 
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #34475a;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: absolute;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.navbar {
+  background-color: #333!important;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 16px;
+  z-index:initial;
+}
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #333;
+  color: #fd852d;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: #ddd;
+}
+/* เมนูดอบดาว */
+.dropbtn {
+  background-color: #333!important;
+  color: #ddd;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555!important;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #ddd;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width:200px;
+  text-align:left;
+}
+.dropdown-content a:hover {background-color: #555!important;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #333!important;
+  color: #fd852d;
+}
+/* end เมนูดอบดาว */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .row {flex-direction: column; }
+#menu_top{ display:none; }
+#menu_top_Sidebar{ margin-left: 20px; background-color: #555!important; }
+ .navbar {
+	overflow: hidden;
+    background-color: #333!important;
+}}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #e6f4fe;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.w3-content600{max-width:600px;margin:auto;}.w3-rest{overflow:hidden}
+.w3-content{max-width:1324px;margin:auto;}.w3-rest{overflow:hidden}
+i.fa{ color: #fd852d; } 
+
+.modal-color-header{
+background: #b7aca4;
+color: #000;
+}
+.modal-color-footer{
+background: #b7aca4;
+color: #000;
+}
+
+ /* opj_youtube */
+@media screen and (max-width: 1980px){
+ .opj_youtube{
+ width: 800px;
+ height:400px;
+ padding:5px; 
+
+ }
+	
+}	
+	
+@media screen and (max-width: 1024px){
+ .opj_youtube{
+ width: 550px;
+ height:300px;
+ padding:5px; 
+ }
+ 
+}
+	
+@media screen and (max-width: 768px){
+ .opj_youtube{
+ width: 390px;
+ height:210px;
+ padding:5px; 
+ }
+}
+	
+@media screen and (max-width: 640px){
+ .opj_youtube{
+ width: 380px;
+ height:210px;
+ padding:5px; 
+ }
+}
+	
+/* @media screen ................. min-width:600px */
+ 
+@media screen and (max-width: 480px){
+ .opj_youtube{
+ width: 350px;
+ height:200px;
+ padding:5px; 
+ }
+	}
+/* end opj_youtube */
+
+
+
+
+ /* opj_prd */
+@media screen and (max-width: 1980px){
+ .opj_prd{
+ width: 30%;
+ padding:5px; 
+ border: 1px solid #ddd;
+ }
+	
+}	
+	
+@media screen and (max-width: 1024px){
+ .opj_prd{
+ width: 30%;
+ padding:5px; 
+ 
+ }
+ 
+}
+	
+@media screen and (max-width: 768px){
+ .opj_prd{
+ width: 30%;
+ padding:5px; 
+ }
+}
+	
+@media screen and (max-width: 640px){
+ .opj_prd{
+ width: 45%;
+ padding:5px; 
+ }
+}
+	
+/* @media screen ................. min-width:600px */
+ 
+@media screen and (max-width: 480px){
+ .opj_prd{
+ width: 45%;
+ }
+	}
+/* end opj_prd */
+
+
+/* start แสดงสินค้า */
+.photo_img{ margin: 5px; }
+.mg{ margin: 5px; border: 1px solid #ddd;}
+#w_photo{width:30.33%;}
+img#w_photo2{width:90.33%;}
+@media screen and (max-width: 1980px){ /* start max-width: 1980px ---------------------------------------------------------------- */
+
+.menu_left_type a{color: #666;}
+.menu_left_type a:hover{color: #333;}
+
+ .shw_prd_type{width: 100%; height: 110px; border-bottom: 0px solid #eee;}
+ .shw_prd{width: 100%; height: 130px; border-bottom: 0px solid #eee;}
+
+ .shw_prd_type_m4{width:28.33333%;}
+ .shw_prd_type_m8{width:71.66666%;}
+
+.menu_left_type_category:hover{background-color: #e2f0fa; }
+.shw_cry_type_m4{width:8.33333%;}
+.shw_cry_type_m8{width:91.66666%;}
+
+#logo{height:auto; width:362px; border:0px; margin-top: 10px;}
+
+#w_prd24{width:24.99%}
+
+#w_prd{width:33.33%}
+#w_type{width:49.99%; } 
+#w_prd_q{width:16.66666%; }
+#w_article{width:49.99%; } 
+#w_photo{width:30.33%;}
+img#w_photo2{width:90.33%;}
+}	
+	
+@media screen and (max-width: 1300px){ /* start max-width: 1024px ---------------------------------------------------------------- */
+
+#logo{height:auto; width:362px; border:0px; margin-top: 10px;}
+#w_prd24{width:32.99%}
+#w_prd{width:49.99%; } 
+#w_type{width:99.99%; } 
+#w_prd_q{width:24.99999%; }
+#w_article{width:49.99%; } 
+#w_photo{width:30.33%}
+img#w_photo2{width:70.33%;}
+}
+	
+@media screen and (max-width: 768px;){ /* start max-width: 768px ---------------------------------------------------------------- */
+
+#logo{height:auto; width:362px; border:0px; margin-top: 10px;}
+ 
+ .shw_prd_type_m4{width:16.66666%}
+ .shw_prd_type_m8{width:83.33333%}
+
+
+#w_prd24{width:49.99%}
+#w_prd{width:49.99%; } 
+#w_prd_q{width:33.33%;}
+#w_article{width:49.99%; } 
+#w_photo{width:45.33%}
+img#w_photo2{width:70.33%;}
+}
+	
+@media screen and (max-width: 640px){ /* start max-width: 640px ---------------------------------------------------------------- */
+
+#logo{height:auto; width:362px; border:0px; margin-top: 10px;}
+#w_prd24{width:49.99%}
+#w_prd{width:49.99%}
+#w_prd_q{width:33.33%;}
+#w_photo{width:45.33%}
+img#w_photo2{width:99.33%;}
+}
+
+@media screen and (max-width: 480px){ /* start max-width: 480px ---------------------------------------------------------------- */
+#logo{height:auto; width:100%; border:0px; margin-top: 10px;}
+
+ .shw_prd_type_m4{width:28.33333%}
+ .shw_prd_type_m8{width:71.66666%}
+
+#w_prd24{width:99.99%}
+#w_prd{width:99.99%}
+#w_prd_q{width:49.99%;}
+#w_article{width:99.99%; } 
+#w_photo{width:99.99%}
+}
+
+@media screen and (max-width: 312px){ /* start max-width: 312px ---------------------------------------------------------------- */
+
+#w_prd{width:99.99%}
+#w_prd_q{width:99.99%;}
+#w_article{width:99.99%; } 
+}
+/* end แสดงสินค้า */
+
+#title_prd{color:#0971a7; }
+#price_prd{ color:#fb5005;}  
+ 
+
+
+ a#a_link{
+text-decoration:none;
+color: #555;
+}
+ a:hover#a_link{
+color: #065fcd;
+}
+
+#shw_prd_txt{list-style-type:none;padding:0;margin:0; padding: 5px; line-height:20px;}
+#shw_prd_txt:hover{
+background-color: none;
+}
+
+#sid_button{
+border-bottom: 1px solid #ddd;
+}
+
+ 
+ /* ส่วนการแบ่งหน้า */
+.browse_page{  
+    clear:both;  
+    height:35px;  
+    margin-top:5px;  
+    display:block;  
+}  
+.browse_page a,.browse_page a:hover{  
+    display:block;  
+    height:20px;  
+    width:20px;  
+    font-size:10px;  
+    float:left;  
+    margin-right:2px;  
+    border:1px solid #CCCCCC;  
+    background-color:#F4F4F4;  
+    color:#333;  
+    text-align:center;  
+    line-height:18px;  
+    font-weight:bold;  
+    text-decoration:none;  
+}  
+.browse_page a:hover{  
+    border:1px solid #0A85CB;  
+    background-color:#0A85CB;  
+    color:#FFFFFF;  
+}  
+.browse_page a.selectPage{  
+    display:block;  
+    height:20px;  
+    width:20px;  
+    font-size:10px;  
+    float:left;  
+    margin-right:2px;  
+    border:1px solid #0A85CB;  
+    background-color:#0A85CB;  
+    color:#FFFFFF;  
+    text-align:center;  
+    line-height:18px;  
+    font-weight:bold;  
+}  
+.browse_page a.SpaceC{  
+    display:block;  
+    height:20px;  
+    width:20px;  
+    font-size:10px;  
+    float:left;  
+    margin-right:2px;  
+    border:0px dotted #0A85CB;  
+    font-size:11px;  
+    background-color:#FFFFFF;  
+    color:#333333;  
+    text-align:center;  
+    line-height:18px;  
+    font-weight:bold;  
+}  
+.browse_page a.naviPN{  
+    width:50px;  
+    font-size:12px;  
+    display:block;  
+    height:20px;  
+    float:left;  
+    border:1px solid #0A85CB;  
+    background-color:#0A85CB;  
+    color:#FFFFFF;  
+    text-align:center;  
+    line-height:18px;  
+    font-weight:bold;     
+}  
+.browse_page a.naviPN:hover{  
+    width:50px;  
+    font-size:12px;  
+    display:block;  
+    height:18px;  
+    float:left;  
+    border:1px solid #0A85CB;  
+    background-color:#0A85CB;  
+    color:#FFFFFF;  
+    text-align:center;  
+    line-height:18px;  
+    font-weight:bold;     
+}  
+.none{
+	list-style: none;
+}
+.none li{
+	display: inline;
+}
+ 
+ .w3-modal{
+z-index:10;
+ }
+
+ .navbar{
+z-index:1;
+ }
